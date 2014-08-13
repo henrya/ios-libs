@@ -20,5 +20,6 @@ Example:
 Additional parameters are as follows:
 
 cacheFileName: file name to store in local cache.
+
 localCacheTime: how long time the cache will kept, until it will be refreshed again. Use "0", to disable cachhe.
 
