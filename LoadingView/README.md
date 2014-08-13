@@ -13,7 +13,12 @@ At first you should import "GlobalLoadingView.h"
 
 and in your implementation you should initialize LoadingView like this:
 
-```globalLoadingView = [[GlobalLoadingView alloc] init];[globalLoadingView setLoadingTitle:@"Please wait"];[self.view addSubview:globalLoadingView.loadingDataView];```
+`globalLoadingView = [[GlobalLoadingView alloc] init];`
+
+`[globalLoadingView setLoadingTitle:@"Please wait"];`
+
+`[self.view addSubview:globalLoadingView.loadingDataView];`
+
 
 To hide LoadingView, you can just set object state to hidden
 
