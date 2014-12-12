@@ -229,8 +229,9 @@
     if(str == NULL){
         return @"";
     }
+    unsigned int strLength =  (int)strlen(str);
     unsigned char result[CC_MD5_DIGEST_LENGTH];
-    CC_MD5(str, strlen(str), result);
+    CC_MD5(str, strLength, result);
     
     NSMutableString *ret = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH*2];
     for(int i = 0; i<CC_MD5_DIGEST_LENGTH; i++) {
